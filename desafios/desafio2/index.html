@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio com imagens flexíveis</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <p>Você está vendo a imagem completa? Expermente ampliar o tamanho da sua janela para ter um experiência completa.</p>
+    <picture>
+        <!--Usa-se a tag <picture> dentro dela põe a tag <img> põe a maior imagem-->
+        <!--Usa-se a tag <source:media:type>, muda o 'media' para 'max-width' põe o tamanho máximo da imagem com 50px a mais-->
+        <!--Põe em 'srcset' onde a imagem está e seu formato, em 'type' põe o tipo de midia e formato.-->
+        <!--Os tamanhos de imagens vão diminuindo de baixo para cima, ou seja, quando o tamanho e exibição não suportar 1050px, rode a img-m (700px)-->
+        <source media="(max-width: 750px )" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem 1000px">
+        <p><a href="pag002.html" target="_self" rel="next">Próxima página</a></p>
+    </picture>
+</body>
+</html>

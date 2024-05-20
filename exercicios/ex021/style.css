@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*Usa-se margin-right: 0; para a box-div ficar próximo as bordas do site, ou
+ margin: Xpx 0px Xpx Xpx ; */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Cor da página*/
+    background-color: darkgrey;
+}
+
+header {
+    /*Cor do cabeçalho*/
+    background-color: white;
+
+    /*Enchimento do cabeçalho*/
+    padding: 10px;
+
+    /*Arredonda as bordas da div*/
+    border-radius: 10px;
+
+    /*Faz uma sombra na box com dimensões de:
+    Tamanho de Sombra vertical (baixo) para horizontal (direita), borragem da sombra e largura de espalhamento da sombra e cor
+    Para esquerda e cima usa 'box-shadow: inset' com as mesmas configurações*/
+    /*Ficou muito boa com essa config*/
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.412);
+}
+
+main {
+    /*Cor do box de conteúdo*/
+    background-color: lightgray;
+
+    /*Enchimento do conteúdo, afasta o texto da borda da caixa*/
+    padding: 10px;
+
+    /*Tamanho da margem em cada direções 
+    (sentido horário)*/
+    margin: 10px 0px 0px 0px;
+
+    /*Arredonda as bordas da div*/
+    border-radius: 10px;
+}
+
+article > aside { /*Configuração do 'aside' dentro do 'article' o '>' indica que está dentro*/
+    background-color: rgb(95, 96, 96);
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 10px 0px 10px 0px;
+    padding: 1px;
+    /*Arredonda as bordas da div*/
+    border-radius: 5px;
+}
+
+
+nav{
+    background-color: rgb(136, 134, 134);
+    padding: 3px;
+}
+
+nav > a { /*Significa que o link 'a' está dentro da div nav e recebe estas configurações*/
+
+    color: white;
+    
+    /*tira o sublinhado do link */
+    text-decoration: none; 
+
+    /* display: block; Cada link ocupa uma linha inteira e quebra essa linha no próximo link (característica block de box-level) */
+    /* Links são inline-level mas podem ser mudados usando display: block; */
+
+    /*Separa os links*/
+    margin-right: 15px;
+}
+
+nav > a:hover { /*Significa que o link 'a' está dentro da div nav e recebe estas configurações*/
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer > p {
+    /*Margem do parágrafo é 0*/
+    margin: 0px;
+}

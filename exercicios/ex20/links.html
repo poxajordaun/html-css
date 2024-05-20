@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudoclass
+        :: = pseu-elemento
+        > = 'filho' indica que um elemento está dentro de um div por exemplo*/
+
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*Tira os sublinhados dos textos (links)*/
+            font-weight: bold; /*deixar negrito*/
+        }
+
+        a:visited { /*Pseudo classe para cor do link de sites já visitados*/
+            color: darkred;
+        }
+
+        a:hover { /*':' para identidicar a pseudoclasse*/
+            color: black; /*fica preto ao passar o mouse por cima*/
+            text-decoration: underline; /*Quando passar o mouse por cima fica sublinhado*/
+        }
+
+        a:active { /*Da uma cor ao link quando você clica nele*/
+            color: yellow;
+        }
+
+        /*Pseudo Elementos usam '::' para identificar*/
+
+        .especial{/*Ponto identifica que é uma classe*/
+            background-color: rgb(237, 160, 160);
+        }
+
+        .especial::before { /*Põe um texto antes do link*/
+            content: '⚜ ';
+        }
+
+        .especial::after { /*Depois de cada link aparece uma mensagem*/
+            content: ' ⚜'; /*Mensagem mostrada*/ 
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul type="disk">
+        <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">
+            <li>  Respósitorio GitHub</li>
+        </a>
+        <a class="especial"  href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">
+            <li>Canal do YouTube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">
+            <li>Site do CursoemVideo</li>
+        </a>
+    </ul>
+</body>
+</html>

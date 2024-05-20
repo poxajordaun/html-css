@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*Tudo que em HTML é id = # em CSS
+em HTML é class = em CSS é .*/
+
+
+body {
+    /*Usar virgula para separar as congigurações do background-image: linear-gradient*/
+    background-image: linear-gradient(to top, rgb(0, 53, 0), rgb(0, 93, 0));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(30, 132, 2);
+}
+
+
+/*Personalisado a tag isolada, criada por 'id' no HTML*/
+/*Usa '#' para colocar a identificação da tag*/
+h1#principal {
+    background-color: rgb(1, 84, 1);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+/*Configurando class (serve para quando você quer confurarar 2 ou mais elementos diferntes com a mesma configuração) qualquer coisa poder se configurado com uma class criada*/
+
+/*Não usa o nome da tag, apenas a especificação dada a ela
+pode-se usar 2 class em um mesmo elemento, pode-se usar id e class juntos também*/
+.basico {
+    color: rgb(0, 114, 0);
+    font-weight: bold; /*Peso da fonte (negrito, normal etc)*/
+}
+
+.intermediario {
+    color: rgb(166, 166, 0);
+}
+
+.avancado {
+    color: rgb(227, 112, 112);
+}
+
+.destaque {
+    background-color: rgb(255, 255, 0);
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    width: 800px;
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, rgb(107, 107, 248), rgb(102, 102, 196));
+}
+
+main{
+    /*Cor da caixa*/
+    background-color: white;
+    /*Centraliza o contéudo no meio da página*/
+    margin: auto;
+    /*Largura da caixa*/
+    width: 800px;
+    /*Arredonda a borda da caixa*/
+    border-radius: 10px;
+    /*Da um espaço entre o texto e a borda da página*/
+    padding: 10px;
+    /*Cria uma sombra na caixa*/
+    box-shadow: 3px 3px 4px red;
+}
+
+
+h1 {
+    font-family: "Courgette", cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitulos {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+
+p {
+    text-align: justify;
+}
+

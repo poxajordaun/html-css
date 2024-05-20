@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /*Configurações global das CSS */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to bottom, #582DCF 10%, #3F3950 );
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <!--A atg <background-attachment: fixed;> serve para o degradê não rolar-->
+    <!--A tag <backgroud-image: linear-gradient> cria um degrade, você tem que infomar a direção (to right, to left, to bottom, to top) do gradiente e as  cores principais -->
+    <!--Para um gradiente verticial é preciso ajustar a altura com a tag <to bottom> ou <to top> usando a config global das CSS -->
+    <h1>Testando grandiente</h1>
+</body>
+</html>

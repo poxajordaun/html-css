@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* Põe essa configuração global para poder usar o gradinete de cima para baixo*/
+* {
+    /*Configuração da fonte universal do site*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /*Comando para fazer o degrade, necessita da posição do degrade e das cores que serão usadas*/
+    background-image: linear-gradient(to bottom, #589A8D, #8FC1B5 );
+    /*Comando para tirar a barra final do degradê*/
+    background-attachment: fixed ;
+}
+
+main {
+    /*Cor de fundo de onde está o conteúdo html*/
+    background-color: white;
+
+    /*Tamanho da caixa de conteúdo*/
+    width: 600px;
+
+    /*Ajusta o conteúdo a caixa*/
+    padding: 10px;
+
+    /*Centralizar a caixa*/
+    margin: auto;
+
+    /*Arredona pontas daa caixa*/
+    border-radius: 10px;
+
+    /*Faz um sombra na caixa, necessita de 5 parametros, a quantidade de sombra para baixo, para o lado, quanto ela espalha e a cor da sombra*/
+    box-shadow: 5px 5px 15px #00251a;
+}
+
+h1 {
+    /*Centraliza o texto*/
+    text-align: center;
+
+    /*Muda a cor das letras de todos os h1*/
+    color: #d9840d;
+
+    /*Faz um sombra no texto*/
+    text-shadow: 1px 1px 2px #502f00b5 ;
+}
+
+
+h2 {
+    color: #007566 ;
+}
+
+
+p {
+    /*Faz os textos dos parágrafos ficarem com a formatação justificada*/
+    text-align: justify;
+}

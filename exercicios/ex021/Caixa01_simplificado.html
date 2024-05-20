@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas do tipo box-level</title>
+    <style>
+        h1 { /*Simplicação por shorthand*/
+
+            /*Transforma o h1 em inline-level*/
+            /*display: inline;*/
+
+            height: 300px; /*Altura da caixa*/
+
+            width: 300px; /*Largura da caixa*/
+
+            background-color: lightgray; /*Cor da caixa*/
+
+            padding: 10px; /*Preenchimento entre o texto e as bordas da caixa, 10 px a direira, esquerda, cima e baixo
+            Se todos os valores forem iguais, basta informar apenas um*/
+
+            /*Largura / estilo / cor
+                    da borda*/
+            border: 10px solid darkslategray;
+
+
+            /*Aumenta ou diminui a margem da box, pode testar tamanhos usando 'ctrl + ahift + i' selecionando h1 e aumentando o tamanho obsertvado a caixa (Sentido horário) */
+
+            /*Para centralizar, põe a margem da esquerda e direita como 'auto'
+                    margin: 20px */
+            
+            /*Para centralizar todos os lados usa-se 'margin: auto:*/
+            margin: 20px auto 40px auto;
+
+            /*Largura / estilo / cor*/
+            outline: 10px dashed blue;
+
+        }
+
+        a { /*Enchimento para cima, direita, embaixo, esquerda (sentido horário)*/
+            /*Se as 4 forem iguais você pode infomar apenas um valor, exemplo 
+            padding: 10px; (todos os lados receberam 10px). Se usarem 2 valores, ele vai usar 1 dos valores para cima e baixo e o outro valor para direita para esquerda*/
+            padding: 5px 5px 5px 5px;
+
+            /*Largura / estilo / cor*/
+            border: 10px solid rgb(255, 0, 0);
+
+            /*Transforma o a em box-level*/
+            /*display: block;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">são exemplos de caixas inline level.</a> Vamos ver como isso funciona</p>
+</body>
+</html>

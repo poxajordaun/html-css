@@ -1,0 +1,71 @@
+@charset "UTG-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: gray;
+    margin: 0px auto;
+}
+
+
+header {
+    background-color: black;
+    height: 170px;
+    width: auto;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-family: "Passion One", sans-serif;
+    font-weight: 700;
+    padding: 30px 0px 10px 0px;
+    font-size: 3em;
+}
+
+header > h2 {
+    text-align: center;
+    color: white;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+main { 
+    margin: auto; /*Centralizando o conteúdo no meio da página para telas grandes*/
+    background-color: white;
+
+    /*Configurções para a imagem colar na bordar do main*/
+    max-width: 490px; /*Lagura máxima*/
+    min-width: 500px; /*Largura mínima*/
+}
+
+article {
+    text-align: left;
+    padding: 40px 0px 20px 20px;
+    border-top: 20px;
+    font-family: "Sriracha", cursive;
+}
+
+
+/*Centraliza a imagem e cola ela nas bordas no main*/
+section > img {
+    margin: auto -20px; /*Margem negativa para imagem colar na borda esquerda*/
+    display: flex;
+    width: 500px; /*Lagura da imagem*/
+    height: 400px;
+    padding-bottom: 50px;
+}
+
+img > .por_texto {
+    border: 1px solid red;
+    width: 500px;
+    height: 400px;
+    margin: auto -20px;
+    background: url(../desafio012/imagens/background001.jpg) center center no-repeat;
+    background-color: azure;
+}
+

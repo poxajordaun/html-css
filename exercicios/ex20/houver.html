@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Houver</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /*O '>' indica que o parágrafo está dentro da div, e essa configuração serve so para ele. (filho da div)
+        O comando 'display: nome;serve para esconder o parágrafo'*/
+            display: none; /*Esconde algo*/
+        }
+
+        div:hover > p { /*Quando passar o mouse em cima da div (hover) o parágrafo escondido vai ser mostrado (indica que é o parágrafo usando '> p')*/
+            display: block; /*Mostra algo*/
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {  /*Não esquecer os ':' para indicar a pseudoclasse*/
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de houver</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+</body>
+</html>

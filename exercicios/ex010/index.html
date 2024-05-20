@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://www.instagram.com/poxajordaun/" target="_blank" rel="external">repósitorio público no GitHub</a></p> 
+    <!--Usa-se a tag 'a' no texto a ser clicado e põe o link no 'href'-->
+    <!--A tag 'target=_'blank' e rel='external' serve para o link abrir em outra aba-->
+    <p>Você também pode <a href="https://www.youtube.com/watch?v=q0Ese2h-ayo">acessar o canal no youtube</a></p>
+    <!--Nesse link o site será sobreposto-->
+    <!--A tag 'a href' pode ser chamado de âncora porque leva a um outro site-->
+    <h2>Links internos</h2>
+    <p>Está é a primeira página do site, se você quiser pode acessar a <a href="pag002.html" rel="next">segunda página deste site</a></p>
+    <!--Desta forma você vai para a segunda página sdo seu site-->
+    <!--Usa a mesma tag 'a' e em rel põe next na página 1 e rel="prev" nas páginas adiante-->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html">página de notícias</a></p>
+    <!--Para o novo link ser aberto na própria página pode-se usar target="_self" ou não por target-->
+    <p>Você pode acessar a <a href="pag002.html" target="_self">segunda página</a> aqui</p>
+    
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/n1.pdf" download="n1.pdf" type="application/pdf">Clique aqui para baixar o livro</a></li>
+    </ul>
+</body>
+</html>

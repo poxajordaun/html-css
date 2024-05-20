@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio sevidor</p>
+    <!--Usa-se a tag widht para mudar o tamanho que o video ocupa na página-->
+    <video src="midia/Videohashiremoldado.mp4" width="250" controls ></video>
+    <h2>Outra forma de por videos, agora com diferentes formatos <br>Para aumenta a compatibilidade</h2>
+    <video preload="metadata" width="250" controls poster="imagens/thumb.jpeg" > <!--As cofigurações do video sempre irão na tag <video>-->
+        <!--Usa-se <poster> para adicionar uma thumb no video-->
+        <!--A compatibilidade dos videos vão ser testadas nessa ordem até de um deles rode.-->
+        <source src="midia/Videohashiremoldado.mp4" type="video/mp4">
+        <source src="midia/Videohashiremoldado.mp4" type="video/mp4">
+        <source src="midia/videohashi1089.mp4" type="video/mp4">
+        <p>Infelizmente seu nevegador não é compatível, <a href="https://www.youtube.com/watch?v=TCeyIwFGkYo&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=36">baixe o video</a> para assisti-lo</p>
+    </video>
+    <h2>Videos com hospedagem externa (youtube)</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=gxqt_5Zjcj4Nuj7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Video com hospedagem no vimeo</h2>
+    <p><iframe src="https://player.vimeo.com/video/939135094?h=0f78de8fa9&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+</body>
+</html>

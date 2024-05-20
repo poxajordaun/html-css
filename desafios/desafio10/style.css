@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+body {
+    background-color: #84E1AD;
+    /*Cola as bordas do header no body*/
+    margin: 0px auto;
+}
+
+/*Você pode criar um :root {
+}, é a raiz do site, onde você pode por todas as variáveis para colocar todas suas cores e usa-las de uma melhor forma no seu site, serve para fontes e outras configurações*/
+/*Ex: 
+:root {
+    --cor1: #ebe5c5;
+    --cor2: #jjsjio
+    ...
+
+    --fonte-padrao: arial
+    --font-destaque: times 
+    ...
+}*/
+
+
+span {
+    color: #1A5C38;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.letrasombra { /*Construir uma sombra em textos
+    Para caixas usa-se box-shadow e para texto 'textt-shadow' passando os parámetros de sombra horizontal, vertical, espalhamento e cor */
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.296);
+}
+
+.titulo {
+    background-color: white;
+    color: #1A5C38;
+    font-family: idroid;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.subtitulo {
+    background-image: linear-gradient(to right, #3cd78250 1%, #3cd78200 );
+    color: #1A5C38;
+    font-family: idroid;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #045025;
+    font-weight: bold;
+}
+
+a > img {
+    height: 16px;
+    width: 16px;
+}
+
+a:hover {
+    background-color: #045025;
+    color: white;
+}
+
+.links_pagina:hover {
+    text-decoration: underline;
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(to bottom, #3CD782, #08361d);
+    padding: 10px;
+}
+
+header > h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    font-weight: normal;
+    letter-spacing: 2px; /*Espaçamento entre as letras*/
+}
+
+header > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 0px;
+
+}
+
+
+ul > a {
+    font-weight: bold; /*Peso da fonte*/
+    color: #95cb88;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul > a:hover { /*hover é uma pseudoclasse que indica uma mudança quando passar o mouse por cima do elemento selecinado*/
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.223), rgba(255, 255, 255, 0.216));
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: 1s; /*Tempo de transição ao passar o mouse por cima dos links*/
+}
+
+
+main {
+    background-color: white;
+
+    /*Configurações para sites responsívos
+    largura mínima do site e largura máxima*/
+    min-width: 300px; /*Diminui até esse tamanho apenas*/
+    max-width: 800px; /*Depois de 800px o conteúdo não aumenta mais, cria-se bordas ao lado para preenhcer a tela*/
+    margin: auto;
+    padding: 10px;
+}
+
+.geral > p {
+    text-indent: 50px; /*Da um espaço na primeira linha do parágrafo*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/*CENTRALIZAR UMA IMAGEM*/
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+div.video {
+    background-color: cor
+    margin: 0px -20px 30px -20px
+    padding: 20px;
+    padding-bottom: 59%; /*ajusta a exibição do video*/
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    widht: 90%
+    height: 90%;
+}    
+
+
+section#final {
+    background-color: #3CD782;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+section#final > h2 {
+    margin: 0px;
+    background-color: #045025;
+    margin: 0px -10px 0px -10px;
+    padding: 15px 10px 10px 10px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+section > .finalP {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 10px;
+    text-indent: 20px;
+}
+
+p#ultimoPara {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 50px;
+    font-size: 1em;
+}
+
+
+footer {
+    height: 15px;
+    background-color: #1A5C38;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+/*Configurar o tamanho de uma imagem referenciando onde ela está (nesse caso dentro da class corrente) que é uma classe de um link e colocando altura (height) e lagura (width)*/
+.corrente > img {
+    width: 16px;
+    height: 16px;
+}
+
+.final {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+    text-indent: 10px;
+    margin-bottom: 0px;
+}
+ul#lista {
+    /*Inserindo emoji de check list na lista com essa função e o código '\2714' os outros são espaços vazios*/
+    list-style-type: none;
+
+    padding: 0px 0px 0px 10px;
+
+    list-style-position: inside;
+    /*Indenta o texto a quantida de pixels colocada*/
+    text-indent: 20px;
+    
+    /*Quebrar a lista em 2 colunas*/
+    columns: 2;
+}
+
+.final > a:hover {
+    text-decoration: none;
+    background-color: #045025;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+.finalLista {
+    list-style-position: inside; /*Coloca as bolinhas da lista pra dentro*/
+    list-style-type: none;
+ /*Quebra o texto em 2 colunas*/
+    columns: 2;
+}
+
+footer > a {
+    color: white;
+}
+
+section#final img {
+    height: 16px;
+}
+
+
+
+/*Centralizar um video
+div.video {
+    background-color: cor
+    margin: 0px -20px 30px -20px
+    padding: 20px;
+    padding-bottom: 59%; > ajusta a exibição do video
+    position: relative;
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    widht: 90%
+    height: 90%;
+}    
+*/

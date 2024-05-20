@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Aumente e diminua o tamanho do seu navegador</p>
+
+<!--Tag picture suporta diferentes tamanhos de imagens, precisa colcoar a tag <img> dentro da estrutura <picture>-->
+    <picture>
+        <!--Tag <source:media:type> serve para permitir a troca de imagens de acordo com o dispositivo, preencha 'max' no 'media' e ponha o tamanho da maior imagem>-->
+        <!--'srcset' recebe a pasta e qual imagem vai ser carregada caso a primeira imagem não seja a ideal, 'type' recebe o tipo de arquivo da imagem-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Áudios</h1>
+    <p>Vamos aprender a reproduzir aúdio em HTML5</p>
+    <!--Usa-se a tag <audio>, coloco onde o arquivo está, adiciona os comandos 'controls' e 'autoplay'-->
+    <audio src="midia/musicayoutube.mp3.mp3" controls autoplay ></audio>
+    <br>
+    <!--Outra maneira de por áudios em sites é usando o 'source:src' e preenhcer em 'src' o local do arquivo -->
+    <audio preload="metadata" autoplay controls> <!--autoplay não está funcionando no google, o comando 'preload' indica o que vai ser baixado antes do site carregar-->
+        <source src="midia/musicayoutube.mp3.mp3" type="audio/mpeg"> <!--Tenta rodar mp3 depois carrega os outros-->
+        <source src="midia/musicayoutube.mp3.ogg" type="audio/ogg">
+        <source src="midia/musicayoutube.mp3.wav" type="audio/wav">
+        <p>seu site não está rodando audios, mas você pode ouvi-lo por aqui
+        <a href="https://studio.youtube.com/channel/UCbNA35YRghLZMsXdMWo4TlQ/music"></a></p>
+    </audio>
+    <h1>Vídeos</h1>
+    <p>Vamos colocar vídeos no nosso site</p>
+    <video src="midia/videohashi7.mp4" controls></video>
+    <p>Outra maneira de videos</p>
+    <video>
+        <source media="(min-width: )" srcset="" type="image/">
+    </video>
+</body>
+</html>

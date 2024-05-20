@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+h1#titulo {
+    font-family: "Kaushan Script", cursive;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+.especial {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-style: italic;
+}
+

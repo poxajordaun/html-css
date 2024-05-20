@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    /*Escolhe qual fonte vai ser colocada no bory ou no h1, caso for a mesma fonte em todo o site coloca font-family na configuração universal '*{} */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*Escolhe o tamanho da fonte em px ou em*/
+    font-size: 1em ;
+
+    font-weight: lighter;
+    /*Peso da fonte é a grossura da fonte, o traço dela, pode se modificar usando o comando 
+    font-weight: lighter; por exemplo
+    mas pode se usar outros valores tipo font-weight: 100; poe-se variar de 100 a 900 mas não em todas as fontes*/
+
+    font-style: italic;
+    /*font-style: --- 
+    Serve para colocar textos em negrito, itálico etc */
+
+    /*Para o texto sublinhado usa-se
+    text-decoration: underline;*/
+    text-decoration: underline;
+}
+
+h1 {
+    /*Podemos fazer todas essas config em uma linha usando a tecnica de shorthand font:
+
+    font-style (italico, normal, obliquio)
+    font-weight (peso)
+    font-size (tamanho)
+    font-family (fonte)
+    
+    na ordem de cima para baixo
+    Ficará assim: */
+    font: italic bolder 1em 'Arial, Helvetica, sans-serif'
+}
+
+/*Caso não você não queira uma das cingigurações, é so deixar o eapço em branco
+Ficará assim*/
+
+h2 {
+    font: bold 1em 'Times New Roman, serif'
+}

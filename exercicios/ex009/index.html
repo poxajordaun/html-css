@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas (ordem faz diferença)</h2>
+    <ol type="1"> <!--'ol' para listas ordenadas que refaz o índice sempre que algo é adicionado-->
+        <!--type (1 A a I i) deixa fazer itens com letras ou número, basta selecionar o modelo-->
+        <li>Acordar</li> <!--'li' para fazer a lista, um 'li' para cada item, o fechamento da tag li é opcional-->
+        <li>Tomar café
+        <li>Escovar os dentes</li>
+    </ol>
+    <h2>Listas não Ordenadas (não númera)</h2>
+    <ul type="square"> <!--disc circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+    <h2>Minhas linagugens favoritas (listas mistas)</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Fortan</li>
+            <li>Drlphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type ="a" start="4"> <!--Começa em 4 ele vai começar a contagem na 4 letra do alfabeto se for selecionado a classificação por letras-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ul>
+        <li>Nitendinho</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario bros 3</li>
+                <li>Mario lost levels</li>
+            </ul>
+            <li>Ninja gaiden</li>
+        </ul>
+        <li>Super nitendo</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkye kong</li>
+        </ul>
+        <li>Play station</li>
+        <ul type="square">
+            <li>Final fantasy</li>
+            <li>Castelvania</li>
+        </ul>
+    </ul>
+    <h2>Lista de definições</h2>
+    <dl> <!--Tipo de lista-->
+        <dt>Termo</dt> <!--Põe o termo-->
+        <dd>Descriçãao do texto</dd> <!--Explica o termo, mais a esquerda na pagina web-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--As tags sempre foram div e span, div sendo box-level e span sendo inline-level, mas com HTML5 surgiram tags semânticas, como cabeçalho, rodapé, sessão, conteúdo principal, artigo etc-->
+    <header>
+        <!--Cabeçalho do site-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal do site-->
+        <section id="assuntos">
+            <h2>Conteúdo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit, a sed provident molestiae, tenetur enim assumenda placeat, quod totam quia aut voluptatum rem possimus itaque suscipit esse beatae accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, fuga consectetur adipisci consequuntur at molestias dolores veritatis quo id. Consectetur tempora nesciunt odit alias corporis cumque maiores pariatur commodi quia?</p>
+        </section>
+        <section id="noticias"> <!--Sessão de notícias-->
+            <article> <!--Artigos-->
+                <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores obcaecati maiores, sint excepturi consequuntur nobis accusantium est explicabo cupiditate porro vitae incidunt harum. Minima ducimus quia delectus amet iste!</p>
+                    <aside> <!--Infomações sobre quem escreveu este artigo-->
+                        <p>Escrito por Fulano de tal</p>
+                    </aside>
+            </article>
+        </section>
+    </main>
+
+    <!--Rodapé do site (infomrações finais)-->
+    <footer> 
+        <p>Desenvolido pelo Jordão Delas</p>
+    </footer>
+</body>
+</html>
+
+<!--Cabeçalho = header
+    Rodapé = footer
+    Conteúdo Principal = main
+    Sessões = section
+    Artigo = article
+    Referencias = aside
+    
+    Todas podem receber aninhamento de outras tags-->
