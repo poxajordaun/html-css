@@ -118,7 +118,7 @@ main {
 
     /*Configurações para sites responsívos
     largura mínima do site e largura máxima*/
-    min-width: 300px; /*Diminui até esse tamanho apenas*/
+    min-width: 200px; /*Diminui até esse tamanho apenas*/
     max-width: 800px; /*Depois de 800px o conteúdo não aumenta mais, cria-se bordas ao lado para preenhcer a tela*/
     margin: auto;
     padding: 10px;
@@ -136,21 +136,29 @@ picture {
     justify-content: center;
 }
 
-div.video {
-    background-color: cor
-    margin: 0px -20px 30px -20px
-    padding: 20px;
-    padding-bottom: 59%; /*ajusta a exibição do video*/
+
+
+/*Configuração para video responsívo*/
+
+/*Cria uma div no fundo do video, acima do main com essas configurações*/
+.video {
+    background-color: #08361d;
+    margin: 0px -10px 0px -10px;
     position: relative;
+    padding-bottom: 50%; /*Usar porcetangem*/
+
 }
 
-div.video > iframe {
+iframe {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    widht: 90%
-    height: 90%;
-}    
+    top: 5%; /*Distância do video até o topo*/
+    left: 5%; /*Distância da margem esquerda até o topo*/
+    width: 90%; /*Quantos porcento de largura o video ocupa na tela*/
+    height: 90%; /*Quantas porcento de altura o video ocupa na tela*/
+}
+
+
+
 
 
 section#final {
@@ -247,21 +255,3 @@ section#final img {
     height: 16px;
 }
 
-
-
-/*Centralizar um video
-div.video {
-    background-color: cor
-    margin: 0px -20px 30px -20px
-    padding: 20px;
-    padding-bottom: 59%; > ajusta a exibição do video
-    position: relative;
-
-div.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    widht: 90%
-    height: 90%;
-}    
-*/

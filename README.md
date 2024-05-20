@@ -3,4 +3,4 @@
 
 Estou aprendendo a usar repositórios
 
-<a> href="https://poxajordaun.github.io/html-css/exercicios/ex001/index.html target="_blank" Executar o exercício 001</a>
+<a> href="https://poxajordaun.github.io/html-css/exercicios/ex001/index.html target="_blank" Executar o exercício 001 </a>
