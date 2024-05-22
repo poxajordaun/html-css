@@ -5,66 +5,80 @@
     padding: 0px;
 }
 
-body {
+html, body {
     background-color: gray;
-    margin: 0px auto;
+
+    /*Ocupa 100% da altura*/
+    min-height: 100vh;
 }
 
 
 header {
     background-color: black;
-    height: 170px;
-    min-width: 530px;
+    text-align: center;
+    color: white;
     margin: auto;
 }
 
 header > h1 {
-    text-align: center;
-    color: white;
     font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    padding: 30px 0px 10px 0px;
+    font-weight: bold;
+    padding: 50px 0px 0px 0px;
+
+    font-variant: small-caps; /*Letras maiúsculas mas as primeiras letras ficam maior*/
+    
     font-size: 3em;
 }
 
-header > h2 {
-    text-align: center;
-    color: white;
+header > p {
     font-family: "Sriracha", cursive;
-    font-weight: 400;
     font-size: 12px;
+    padding-bottom: 50px;
 }
 
 header a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 header a:hover {
     text-decoration: underline;
 }
 
-main { 
-    margin: auto; /*Centralizando o conteúdo no meio da página para telas grandes*/
-    background-color: white;
-
-    /*Configurções para a imagem colar na bordar do main*/
-    max-width: 600px; /*Lagura máxima*/
-    min-width: 550px; /*Largura mínima*/
-}
-
+/*Configurações para todos os section*/
 section {
-    font-family: "Sriracha", cursive;
-    padding: 30px;
+    /*Cria uma espaço entre as section*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    /*Separação entre as linhas*/
+    line-height: 2em;
+    padding-left: 30px;
+
 }
 
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.151);
+    width: 400px;
+}
 
 footer {
     background-color: black;
     color: white;
-    padding-top: 5px;
+    padding: 10px;
     text-align: center;
-    margin: -30px -30px;
 }
 
 footer a {
