@@ -14,7 +14,8 @@ body {
 header {
     background-color: black;
     height: 170px;
-    width: auto;
+    min-width: 530px;
+    margin: auto;
 }
 
 header > h1 {
@@ -48,8 +49,8 @@ main {
     background-color: white;
 
     /*Configurções para a imagem colar na bordar do main*/
-    max-width: 490px; /*Lagura máxima*/
-    min-width: 500px; /*Largura mínima*/
+    max-width: 600px; /*Lagura máxima*/
+    min-width: 550px; /*Largura mínima*/
 }
 
 section {
