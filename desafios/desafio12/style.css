@@ -86,19 +86,58 @@ section.normal {
     color: black;
 }
 
-section.imagem {
+section.imagem1 {
     background-color: rgb(39, 37, 37);
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+
+    /*Cobre toda a área com uma imagem adaptativa a tamanhos diferentes de tela*/
+    background-size: cover;
+
+    /*Fixa a imagem no fundo da página, impede a rolagem*/
+    /*Permite o efeito parallax*/
+    background-attachment: fixed;
+
+    /*Seleciona uma posição da imagem para focar a exibição*/
+    background-position: right center;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.468);
     color: white;
 }
 
+section.imagem2 {
+    background-color: rgb(24, 23, 23);
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.468);
+    color: white;
+}
+
+
 /*Configuração para os parágrafos dentro das seções com classe imagem */
-section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.151);
+section.imagem1 > p {
+    background-color: rgba(0, 0, 0, 0.371);
     
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+    padding: 10px;
     /*Largura da caixa*/
     display: inline-block;
     padding-left: 10px;
 }
+
+section.imagem2 > p {
+    background-color: rgba(0, 0, 0, 0.371);
+    
+    padding: 10px;
+    /*Largura da caixa*/
+    display: inline-block;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.411);
+}
+
 
 footer {
     background-color: black;
