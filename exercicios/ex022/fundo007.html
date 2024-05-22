@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /*Box que armazena o box com conteúdo, precisa ter a posição relativa*/
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        
+            position: relative;/*Configuração obrigatória para centralização vertical*/
+
+            height: 96vh;/*Altura ocupa 96% da altura da tela*/
+
+            background-color: purple;
+            padding: 10px;
+        }
+
+        /*Box que tem o conteúdo, precisa ter o position absolute */
+        #conteudo {
+            /*Se a posição for absolute você pode configurar as posiçoes de top e left (distância do topo do conteiner e da esquerda)*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            /*Configurações da div, não tem a ver com a centralização*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
