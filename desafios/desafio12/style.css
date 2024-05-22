@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+/*Configurações universais*/
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +10,7 @@
 html, body {
     background-color: gray;
 
-    /*Ocupa 100% da altura*/
+    /*Ocupa 100% da altura, deixa a página adaptativa*/
     min-height: 100vh;
 }
 
@@ -17,6 +19,7 @@ header {
     background-color: black;
     text-align: center;
     color: white;
+    /*Para deixar a página adptativa*/
     margin: auto;
 }
 
@@ -48,12 +51,13 @@ header a:hover {
 
 /*Configurações para todos os section*/
 section {
-    /*Cria uma espaço entre as section*/
+    /*Cria uma espaço entre as section, 10% da altura para cima e para baixo*/
     padding-top: 10vh;
     padding-bottom: 10vh;
 
     /*Separação entre as linhas*/
     line-height: 2em;
+    
     padding-left: 30px;
 
 }
@@ -69,8 +73,11 @@ section.imagem {
     color: white;
 }
 
+/*Configuração para os parágrafos dentro das seções com classe imagem */
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.151);
+    
+    /*Largura da caixa*/
     width: 400px;
 }
 
