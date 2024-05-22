@@ -1,4 +1,4 @@
-@charset "UTG-8";
+@charset "UTF-8";
 
 * {
     margin: 0px;
@@ -34,6 +34,15 @@ header > h2 {
     font-size: 12px;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
 main { 
     margin: auto; /*Centralizando o conteúdo no meio da página para telas grandes*/
     background-color: white;
@@ -43,29 +52,26 @@ main {
     min-width: 500px; /*Largura mínima*/
 }
 
-article {
-    text-align: left;
-    padding: 40px 0px 20px 20px;
-    border-top: 20px;
+section {
     font-family: "Sriracha", cursive;
+    padding: 30px;
 }
 
 
-/*Centraliza a imagem e cola ela nas bordas no main*/
-section > img {
-    margin: auto -20px; /*Margem negativa para imagem colar na borda esquerda*/
-    display: flex;
-    width: 500px; /*Lagura da imagem*/
-    height: 400px;
-    padding-bottom: 50px;
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    margin: -30px -30px;
 }
 
-img > .por_texto {
-    border: 1px solid red;
-    width: 500px;
-    height: 400px;
-    margin: auto -20px;
-    background: url(../desafio012/imagens/background001.jpg) center center no-repeat;
-    background-color: azure;
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
