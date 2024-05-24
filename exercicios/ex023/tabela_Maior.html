@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela maiores</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: darkgrey;
+            color: white;
+        }
+
+        /*EFEITO ZEBRADO
+        Usa-se a pseudo-classe 'nth-child()' e põe de quantas em quantas linhas deve ser usada a personalização citada, nesse caso a linha ficará cinza de 2 em 2 linhas
+        
+        Se usar nth-child(odd) somente as linhas odd, ficaram cinza so as linhas de núemro ímpar*/
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION = Descrição da tabela
+            THEAD
+                tr, td, th
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+        TITULO = th
+        dados = td
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th> <!--Se os dados estiverem alocados abaixo do títullo usa-se scope col-->
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>São Paulo</td>
+            <td class="num">45 919 049</td>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 293</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th> <!--Se os dados estiverem alocados ao lado do título usa-se scope row-->
+                <td class="num">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
