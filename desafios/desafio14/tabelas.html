@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, tr, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th.topo {
+            background-color: rgb(100, 99, 99);
+            color: white;
+            font-weight: bold;
+        }
+
+        td.notas {
+            text-align: center;
+        }
+
+        th.medias {
+            background-color: rgb(100, 99, 99);
+            text-align: left;
+            color: white;
+
+        }
+
+        td.notasmedia {
+            background-color: rgb(100, 99, 99);
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2" class="topo">Área</th>
+                <th cope="col"  rowspan="2" class="topo">Disciplinas</th>
+                <th cope="colgroup" colspan="2" class="topo">Notas</th>
+                <th scope="col" rowspan="2" colspan="2" class="topo">Médias</th>
+            </tr>
+            <tr>
+                <th scope="col" class="topo">Notas 1</th>
+                <th scope="col" class="topo">Notas 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <!--Você não preenhce linha após linha com so uma informação, cada linha recebe todas as informações mesmo que de caráter difernete
+
+                Exemplo: Pra preecher uma linha você coloca o título da linha, a matéria as notas e a média, tudo no mesmo tr, depois cria um novo tr e preenche de outra matéria
+            
+                O preechiemnto é feito completo a cada linha, nas outras matérias, voce põe apenas as matéria e as notas, já que o título exatas vai ocupar 4 linhas em rowspan
+            -->
+
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="medias" colspan="4">Média Exatas</th>
+                <td class="notasmedia">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="medias" colspan="4">Média humanas</th>
+                <td class="notasmedia">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
