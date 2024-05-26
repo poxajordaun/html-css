@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        td, th{
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+
+
+        col.cnome {
+            background-color: aqua;
+        }
+
+        col.iprof {
+            background-color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <!--Método de personalizar um coluna inteira=-->
+    <!--Cria uma tag 'colgroup', dentro dessa tag cria uma tag 'col' e da uma classe pra essa tag, personaliza usando css, as personalizações são colocadas em ordem-->
+
+
+    <h1>Exercício de Tabelas</h1>
+    
+    <table>
+        <colgroup>
+
+            <!--Configuração para as colunas em ordem, a 1 configuração dessa lista será aplicada a primeira coluna e assim em diante
+            
+            Não precisa colocar essas class nas colunas no html para funcionar-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="iprof">
+        </colgroup>
+
+
+        <caption>Casdastro</caption>
+        <tr>
+
+            <!--Aplicação da tag na coluna-->
+            <th scope="col">Nome</th>
+
+
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr >
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>37</td>
+            <td>Costureira</td>
+        </tr>
+    </table>
+</body>
+</html>
