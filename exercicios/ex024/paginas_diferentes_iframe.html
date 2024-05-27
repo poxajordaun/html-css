@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            min-width: 200px;
+            border: 2px solid black;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum obcaecati nihil soluta sequi iure natus! Temporibus, consequuntur hic dolores beatae officia dolorum nobis molestiae eius commodi rerum quae corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!--Você cria um 'name' para o iframe, e depois no link você coloca em 'target' o nome que você pós no iframe, dessa maneira o link que você fez, vai ser mostrado no frame-->
+
+    <ul>
+        <!--name referenciado-->
+        <li><a href="paginasExtras/paf001.html" target="painel">Primeira página</a></li>
+        <li><a href="paginasExtras/pag002.html" target="painel">Segunda página</a> </li>
+        <li><a href="paginasExtras/pag003.html" target="painel">Terceira página</a></li>
+    </ul>
+
+
+
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum obcaecati nihil soluta sequi iure natus! Temporibus, consequuntur hic dolores beatae officia dolorum nobis molestiae eius commodi rerum quae corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, maiores amet laboriosam repellendus commodi voluptas, error pariatur totam ducimus nihil neque obcaecati qui beatae nesciunt praesentium alias? Pariatur, autem dolore.</p>
+
+    <!--name criado-->
+    <!--'srcdoc' serve para por algum conteúdo no iframe antes dele ser aberto em alguma escolha-->
+
+    <!--Para colocar textos no iframe as tags ficaram vermelhas, mas funcionaram desde que você escreva certo
+    Preste atenção na tag img -->
+
+    <!--O mais recomendável é criar uma página html completa com css e colocar no 'srcdoc' para ficar algo mais bonito-->
+
+    <iframe id="tela" name="painel" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure minus odio obcaecati fugit veritatis voluptas consectetur quae molestias distinctio ipsa reprehenderit, soluta in mollitia expedita ex ea rerum quod dicta.</p> <img src='imagens/furia.png'>"
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos excepturi laboriosam animi provident odit ipsa magni aperiam nam molestiae maxime non debitis iste temporibus, ad accusamus corrupti possimus dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vel rem, dolorem ipsam fugiat dolor eos. Similique iste, atque perferendis hic aspernatur sed et beatae blanditiis cupiditate ratione maiores facere.</p>
+</body>
+</html>

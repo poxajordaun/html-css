@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+
+    <!--Centralizar iframe
+    Coloca display block pra mudar de inline-level pra box-level, e aplica margin auto-->
+    <style>
+        iframe {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, tenetur soluta. Eum, voluptate voluptatem natus fugit odit doloremque a nisi omnis totam explicabo, sunt et illo voluptas incidunt quidem necessitatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, exercitationem distinctio similique nostrum molestias odio veritatis harum vitae, cupiditate voluptas in reiciendis autem quia. Labore dolorem alias eos assumenda voluptatibus?</p>
+
+    <!--Caso seu conteúdo esteja em outra pasta você acessa ele colocanod '../' para identificar que o seu conteúdo está em uma página anterior-->
+
+    <iframe src="../ex024/paginasExtras/paf001.html" frameborder="0" width="500px" height="500px">
+        <p>Infelizmente seu navegador não é compatível pra isso, <a href="paginasExtras/paf001.html" target="_blank">acesse esse link</a> para ter acesso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus doloremque sed blanditiis magnam laudantium architecto numquam sunt odit reprehenderit? Blanditiis impedit voluptatibus nesciunt amet eius tempora omnis delectus culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate explicabo numquam aut laudantium recusandae similique cumque odio iusto id, fugit repellat consequuntur corporis doloribus molestiae modi a vero commodi!</p>
+</body>
+</html>
