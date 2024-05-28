@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes </title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facere officia quae mollitia nisi a, ipsum quam voluptates debitis ratione. Repellendus assumenda aperiam labore? Illum error consectetur minima sit incidunt.</p>
+
+    <!--Puxei essa caixa e cadastro e outra página do meu site e abro no iframe colocanddo o endereço da página-->
+
+    <!--A config 'sandbox=""sandbox' evita que os dados sejam puxados, ajuda a proteger de ações maliciosas-->
+
+    <!--"referrerpolicy="no-referrer" da mais seguraça ao site-->
+
+    <!--Para o fazer o formulario funcionar você pode usar as opções de sandbox abaixo-->
+
+    <!--
+
+        sandbox="allow-same-origins" quando tudo for do seu próprio site
+
+        sandbox="allow-script" pra executar sripts
+
+        sandbox="allow-forms" pra executar formulários
+
+    -->
+    
+    <iframe src="paginasExtras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"    frameborder="1">
+        Seu navegador não é compatível com isso
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde neque aut est illo impedit vitae reiciendis voluptates, illum debitis laboriosam deleniti porro nam rem atque, odio ipsum quos mollitia adipisci.</p>
+</body>
+</html>
