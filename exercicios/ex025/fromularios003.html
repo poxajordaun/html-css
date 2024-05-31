@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="12" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <!--Para números usa-se 'input:number' coloca o 'max' e 'min' que essa nota pote ter e o 'step' que e´de quanto em quanto esse número pode variar para aceitar mais opções-->
+            <label for="imedia">Média: </label>
+            <input type="number" name="nota" id="inota" max="10" min="0" required step="0.1" placeholder="Digite sua média">
+        </p>
+        <p>
+            <label for="iper">Período letivo</label>
+
+            <!--Cria um formulário pra preecher mês
+                
+            'value' sugere um valor pra mostrar na caixa e o usuário poder personaliza-lo -->
+            <input type="month" name="periodo" id="iper" value="2024-06">
+        </p>
+        <p>
+            <!--Cria uma caixa pra preechimento de data-->
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="data" id="idia">
+        </p>
+
+        <!--Input para caixa de horário-->
+        <p>
+            <label for="iprova">Horário da prova: </label>
+            <input type="time" name="hora" id="iprova">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
