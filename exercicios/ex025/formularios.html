@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro dormuçário</h1>
+    <!--Cria a tag form, dentro dela cria parágrafos com os dados que você quer colher
+    Para criar a caixa pro usuário preecher algum dadi você cria o 'text:input' e da um id e um name pra ele
+
+    O autocomplete off para e sugerir um nome que você já colocou nas caixas de pesquisa, por padrão ele já é automático no on-->
+
+    <!--Existem 2 métodos de envio dde formulários
+    Metodo = get (padrão, envia pela url)
+    Metodo = post (você configura, envia pela )-->
+
+    <form action="cadastro.php" autocomplete="off" method="post">
+
+        <!--É muito importante para as linguagens de programção que os termos estejam ligados, para isso você precisa criar um label e no parâmetro 'for' você colocar o  id que deu para a linha do formulário-->
+        <p>
+            <label for="inome">Nome:</label>
+
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"> </p>
+
+        <!--Para criar um botão de enviar você cria um 'input:submit' e no campo value coloca o texto enviar-->
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

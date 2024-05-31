@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Criando mais opções de caixa de texto em HTML</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+
+            <!--Usa-se required para tornar obrigatória o preenchimento dos dados pra o usuário enviar, usa-se nos input-->
+
+            <!--minlenght é uma parâmetro que diz quantas caractéries tem que ter no mínimo no input
+
+            maxlenght indica quantas caractéries no máximo podem ter no input-->
+
+            <!--Size diz aumenta ou diminui o tamanho da caixa de input-->
+
+            <!--'placeholder' coloca um texto dica na caixa para indicar o que o usuário deve fazer-->
+
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do usuário">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+
+            <!--Input para senha, coloca asteriscos quando você digitar-->
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="10" autocomplete="username">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+
+            <!--Cria um botão que apaga os dados caso o usário erre -->
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
