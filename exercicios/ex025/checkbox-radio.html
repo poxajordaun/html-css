@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check box</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <!--Botão de radio é usado pra quando pode-se marcar apenas uma opção-->
+            <legend>Sexo</legend>
+            <!--O problema de não conseguir desmacar as caixas usando 'input:radio' pode ser resolvido usando o mesmo name pras duas caixas, não o mesmo id, apenas o name tem que ser igual pras duas pra você poder marcar apenas uma de uma vez-->
+            <input type="radio" name="sexo" id="isxmax" value="M">
+            <label for="isxmax">Masculino</label><br>
+            <!--Coloca o 'value' pra ele identidicar o que está sendo enviado na url-->
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                <label for="ifut">Futebol</label>
+                <!--checked indica que uma das opções ja vai estar marcada quando abrir o site, o usuário pode desmacar e usar, mas você pode colocar essa opção nas caixas que geralemnte são marcadas pra melhorar a experiencia do usuário-->
+                <input type="checkbox" name="futebol" id="ifut" checked>
+            </p>
+            <p>
+                <label for="ivol">Volei</label>
+                <input type="checkbox" name="volei" id="ivol">
+            </p>
+            <p>
+                <label for="igolf">Golf</label>
+                <input type="checkbox" name="golf" id="igolf">
+            </p>
+            <p>
+                <label for="iping">Ping pong</label>
+                <input type="checkbox" name="pingpong" id="iping">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

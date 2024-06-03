@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de telefone e Controles de email</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--O fildset serve para fazer um agrupamento de dados, ele vai fazer uma caixa com todos os inputs que tiverem dentro dele, você pode colocar um 'legend' pra dar um título ao agrupamento-->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p><label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome"></p>
+            <p><label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required></p>
+            <p><label for="itelefone">Telefone</label>
+            <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" placeholder="(xx) (xxxxx) (xxxx)"></p>
+            <!--pattern é uma regEx que so está configurada para receber apenas números de 0-9 de 4 em 4 dígitos-->
+            <!--Estudar mais sobre regEx-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

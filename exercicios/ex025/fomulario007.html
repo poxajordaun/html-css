@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <!--'select' cria um caixa onde você tem um lista de opções para selecionar, você mesmo monta essa lista colocando a tag 'option' e preechendo as opções-->
+            <!--Você pode também usar a opção 'optgroup' para fazer um agrupamento de opções, usa-se o 'label' no 'optgroup' para separar os grupos-->
+            <select name="estado" id="iest">
+                <!--Deixa uma indicação na caixa pra dizer o que o usuário vai selecionar-->
+                <option value="">Escolha seu estado</option>
+                <optgroup label="Região Suldeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="Ma">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <!--Para fazer um input que tenha uma lista de opções para ser selecionada onde o usuário também pode digitar você, cria uma caixa de texto normal com label pra relacionar, depois, cria um 'datalist' e dentro do 'datalist' coloca as 'option' com as opções, crie um 'id' para o datalist e no input use a tag 'list' com o nome do id que você deu para o 'datalist'-->
+
+            <label for="iprof">Profissões</label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <!--'textarea' cria uma caixa de texto que você pode digitar quantas carateres desejar, e você ainda pode configurar quantas linhas colunas sua caixa vai ter por padrão com as configurações 'cols' e 'rows'-->
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem aqui"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
