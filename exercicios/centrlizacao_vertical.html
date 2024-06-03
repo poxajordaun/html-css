@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+            
+        }
+
+        div#conteiner{
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+            position: relative;
+        }
+
+        /*Para centralizar verticalmente
+        1. A div conteiner, que é feita para centralizar a div que você quer, precisa ter um 'position: absolute;', enquanto a div conteudo terá 'position: relative;'
+        2. Agora com o 'positon: absolute;' você pode confiigurar as opções de 'left' e 'top' ambas em 50%
+        3. Após isso você coloca a configuração 'transform: translate(-50%, -50%);', essa configuração fará com que o centro dessa div conteudo fique em cima do centro da div conteiner que está no fundo,dessa forma ficando centralizado*/
+
+        div#conteudo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        
+
+            height: 200px;
+            width: 400px;
+            margin: auto; /*Centraliza verticalmente*/
+            background-color: yellow;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Centralizar div verticalmente e horizontalmente</h1>
+    <div id="conteiner">
+        <div id="conteudo">
+        </div>
+    </div>
+</body>
+</html>
