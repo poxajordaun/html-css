@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://www.10wallpaper.com/wallpaper/1366x768/1311/river_lake_dawn_beautifully-Landscape_HD_Wallpaper_1366x768.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        div#login {
+            border-radius: 10px;
+            background-image: linear-gradient(to top, rgb(180, 180, 235), rgb(246, 184, 246));
+            width: 300px;
+            height: 400px;
+            margin: auto;
+
+            /*Centralizando caixa de login verticalmente*/
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            transform: translate(-50% -50%);
+        }
+
+        div#login{
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        form {
+            padding-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="login">
+            <h2>Login de usuários</h2>
+            <form action="cadastro.php" method="post">
+                <p id="nome">
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required maxlength="20" minlength="8" autocomplete="name">
+                </p>
+                <p>
+                    <label for="isenha">Senha: </label>
+                    <input type="password" name="senha" id="isenha" required maxlength="20" minlength="8" autocomplete="new-password">
+                </p>
+                <p>
+                    <label for="idata">Data: </label>
+                    <input type="date" name="data" id="idata">
+                </p>
+            </form>
+    </main>
+    </div>
+</body>
+</html>
