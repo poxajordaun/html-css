@@ -32,7 +32,7 @@ html {
 }
 
 main {
-    background-color: aliceblue;
+    background-color: rgb(126, 189, 244);
 
 }
 
@@ -43,6 +43,7 @@ main h2 {
 article p {
     line-height: 1.6em;
     text-indent: 20px;
+    padding: 10px;
 }
 
 /*Caso ocorra o erro de o texto vazar e o site ficar com rolagem lateral é so você retirar o configuração "width" e por apenas 'max-width' e 'min-width'*/
