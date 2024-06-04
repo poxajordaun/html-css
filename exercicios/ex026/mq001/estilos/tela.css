@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*Estilo para telas*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(71, 71, 71);
+}
+
+header > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8em;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 10px 5px 10px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    background-color: aliceblue;
+
+}
+
+main h2 {
+    line-height: 2em;
+}
+
+article p {
+    line-height: 1.6em;
+    text-indent: 20px;
+}
+
+/*Caso ocorra o erro de o texto vazar e o site ficar com rolagem lateral é so você retirar o configuração "width" e por apenas 'max-width' e 'min-width'*/
+main > article {
+    padding: 10px;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    text-align: justify;
+}
