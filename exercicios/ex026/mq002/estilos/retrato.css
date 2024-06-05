@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /*Aparelho em pé*/
+
+
+/*Congigurações apenas para telas verticais*/
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+
+}

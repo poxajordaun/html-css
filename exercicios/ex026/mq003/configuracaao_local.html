@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Query</title>
+    <!--Em projetos menores você pode fazer todas as configurações localmente ou em apenas um folha de css, você coloca @media screen and (orientation: portrait){}e dentro das chaves as configurações únicas para tela em pé e/ou @media screen and (orientation: landscape){}para telas deitadas-->
+
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <style>
+        /*Declarações gerais*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+
+
+            /*Faz com caiba a imagem inteira na tela independente do tamanho dela*/
+            /*Configuração geral pra todos os estilos de tela*/
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px #16248d;
+            padding: 10px;
+        }
+
+        /*Declaração de retrato*/
+        @media screen and (orientation: portrait){
+            /*Congigurações apenas para telas verticais*/
+            body {
+                background-image: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+
+}
+            
+        }
+
+        /*Declaração de paisagem*/
+        @media screen and (orientation: landscape){
+            /*Configurações apenas para telas horizontais*/
+            body {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a horientação do seu dispositivo</h1>
+</body>
+</html>
