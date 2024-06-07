@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsívo</title>
+
+    <!--Link de um css do google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="estilos/style.css" >
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+
+        <!--Usando o css do google-->
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Midia Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptates eveniet accusamus ipsum quae, facilis repellendus nam quos deserunt nisi expedita, vero animi necessitatibus assumenda aperiam enim reprehenderit et iure Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim repellendus quia nulla perferendis sequi accusamus, in eligendi asperiores illum dicta esse, mollitia ut nihil deleniti excepturi quas nisi perspiciatis? </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut autem nesciunt consectetur eaque, esse praesentium impedit incidunt dolorum quaerat distinctio fuga mollitia labore inventore eum aliquam minima voluptatibus reiciendis cumque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quasi nostrum alias, magnam tenetur tempora eaque harum! Nam, voluptatem fuga? Non, consectetur. Reiciendis ab fugiat fuga cum excepturi distinctio dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, mollitia iure? Repudiandae, officiis sit? Quas velit quia, quisquam molestias enim provident aliquam, nobis soluta neque eaque perferendis asperiores modi veritatis?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus enim exercitationem accusantium, culpa praesentium delectus quia debitis cum accusamus rem ad nihil! Facilis, sint ipsa. Rerum vero perspiciatis numquam sed?</p>
+        </article>
+    </main>
+
+
+    <!--JavaScript-->
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.diplay = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

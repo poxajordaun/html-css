@@ -1,0 +1,25 @@
+@charset "UTF-8";   
+
+
+/*Para telas até 768px mostrará o menu em hamburguer, acima disso mostará no menu normalmente*/
+@media screen and (min-width: 768px){
+    /*Esconde o hamburguer*/
+    span#burger {
+        display: none;
+    }    
+
+    /*Mostra o menu*/
+    menu {
+        display: block;
+        
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+
