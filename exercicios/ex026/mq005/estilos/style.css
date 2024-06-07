@@ -1,5 +1,8 @@
 @charset "UTF-8";   
 
+/*Essa é a versão mobile, padrão do site, as configurações gerais do site e especificas para mobile estarão aqui, depois que essa folha ficar pronta, você faz outra página de css com as personalizações específicas usando midia feature com 'max-width' e 'min-width' para personalização para outras telas, podendo simplemente so tirar o que se usou nessa página*/
+
+
 * {
     margin: 0px;
     padding: 0px;
