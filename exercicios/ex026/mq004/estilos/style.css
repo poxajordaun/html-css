@@ -1,78 +1,44 @@
 @charset "UTF-8";
 
-/*Estilo para todos os formatos*/
+/*Para todas as telas*/
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
     margin: 0px;
+    border: 0px;
     box-sizing: border-box;
-    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-    height: 100vh;
-}
 body {
-    background-size: cover;
+    background-image: url(../imagens/back-phone.jpg);
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.589);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.696);
     width: 90vw;
     margin: auto;
-    margin-top: 20px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 main > h1 {
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.499);
-    font-size: 2em;
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.551);
 }
 
-img{
-    display: block;
+img#pc {display: none;}
+img#tv {display: none;}
+img#impressora {display: none;}
+img#tablet {display: none;}
+img#celular {display: block;}
+
+img {
     margin: auto;
 }
 
 
-@media print {
-
-}
-
-/*Aqui ficam todas as especificações pontuais de cada tela, todas recebem a folha de aplicação 'all' que é style.css e existem ajustes pontuais em uma só folha com especificação de tamanho.*/
-@media screen and (min-width: 695px) and (max-width: 992px) {
-    body {
-        background-image: url(../imagens/back-tablet.jpg);
-    }
-    img#pc {display: none;}
-    img#tv {display: none;}
-    img#celular {display: none;}
-    img#impressora{display: none;}
-}
-
-
-@media screen and (min-width: 992px) and (max-width: 1200px){
-    body {
-        background-image: url(../imagens/back-pc.jpg);
-    }
-    img#tablet {display: none;}
-    img#tv {display: none;}
-    img#celular {display: none;}
-    img#impressora{display: none;}
-}
-
-@media screen and (min-width: 1200px) {
-    body{
-        background-image: url(../imagens/back-tv.jpg);
-    }
-    img#tablet {display: none;}
-    img#pc {display: none;}
-    img#celular {display: none;}
-    img#impressora{display: none;}
-}
